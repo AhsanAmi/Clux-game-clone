@@ -1,0 +1,35 @@
+@mixin button-1($Color,$Bg-color){
+color: $Color;
+background-color:$Bg-color ;
+}
+
+@mixin button-2($Color,$Bg-color){
+    color: $Color;
+    background-color:$Bg-color ;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.8rem 1.3rem;
+    border: 2px $yellow-color solid;
+    margin: 1rem 1rem;
+    &:hover{
+        background-color:$Color ;
+        color:$white-color;
+    }
+    }
+    @mixin button-3($Color,$Bg-color,$hoverColor){
+        color: $Color;
+        background-color:$Bg-color ;
+        font-weight: 600;
+        padding: 1rem ;
+        border-bottom: 4px $Color solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin: 0px 1rem;
+        &:hover {
+            border-bottom:4px $hoverColor solid ;
+            color:$hoverColor ;
+        }
+
+        }
+

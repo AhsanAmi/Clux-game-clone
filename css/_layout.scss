@@ -1,0 +1,12 @@
+@mixin display-flex{
+    display: flex;
+    flex-direction: row;
+}
+@mixin para{
+      font-size: 1.154rem;
+font-weight: 600;
+line-height: 1.5;
+}
+.center{
+    justify-content: center;
+}
