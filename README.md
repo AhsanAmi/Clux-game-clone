@@ -2,6 +2,9 @@
 A tinder website made exclusively for games.
 <br>
 
+# Live Demo 🎥
+<a href="https://ahsan-amin.github.io/Clux-game-clone/">Live Demo Link</a>
+
 # ScreenShoot
 <img src="./images/screenshot.png">
 

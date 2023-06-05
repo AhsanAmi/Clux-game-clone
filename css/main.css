@@ -15,6 +15,10 @@ ul {
   list-style-type: none;
 }
 
+img {
+  width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6, button {
   text-transform: uppercase;
   margin-top: 0px;
@@ -69,50 +73,132 @@ header {
   background-size: cover;
   position: relative;
   z-index: 2;
-  padding-top: 4rem;
+  padding-top: 1rem;
   padding-bottom: 15rem;
-}
-header nav .logo h1 {
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: #ffffff;
 }
 header nav .logo h1 span {
   transition: all 0.5s ease;
   color: #ffc107;
+}
+header nav .logo h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #000000;
+  line-height: 80px;
+}
+header nav {
+  height: 80px;
+  width: 100%;
 }
 header .nav-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-header .nav-container a {
-  color: #ffffff;
+header nav ul {
+  float: left;
+  margin-left: 100px;
+}
+header nav ul li {
+  display: inline;
+  line-height: 40px;
+  color: black;
+  font-weight: bold;
   font-size: 1rem;
-  font-weight: 600;
-  text-transform: none;
+  padding: 0px 8px;
+}
+header nav ul li a {
+  color: rgb(214, 214, 214);
   text-decoration: none;
-  padding: 0 1rem;
 }
-header .nav-container a:hover {
+header nav ul li a:active, header a:hover {
+  color: rgb(255, 187, 0);
+  font-weight: bolder;
+}
+header .check-btn {
+  line-height: 80px;
+  font-size: 3rem;
   color: #ffc107;
+  cursor: pointer;
+  float: right;
+  margin: 0px 40px;
+  display: none;
 }
-header .nav-container .upper-nav ul {
-  display: flex;
-  flex-direction: row;
-}
-header .nav-container .upper-nav button {
+header button {
   color: #ffffff;
   background-color: #ffc107;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  padding: 0.5rem 1rem;
-  margin-left: 0.3rem;
-  border: none;
+  padding: 0.8rem 1.3rem;
+  border: 2px #ffc107 solid;
+  margin: 1rem 1rem;
+  padding: 5px 10px;
+  font-size: 1rem;
 }
-header .nav-container .lower-nav ul {
-  display: flex;
-  flex-direction: row;
+header button:hover {
+  background-color: #ffffff;
+  color: #ffffff;
+}
+header #check {
+  display: none;
+}
+@media (max-width: 1065px) {
+  header label.logo {
+    font-size: 1.6rem;
+  }
+  header .check-btn {
+    font-size: 1.6rem;
+  }
+  header nav ul li {
+    font-size: 1rem;
+  }
+  header nav ul {
+    float: left;
+    margin-left: 50px;
+  }
+}
+@media (max-width: 970px) {
+  header {
+    padding-top: 0%;
+  }
+  header .nav-container {
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+  }
+  header nav .nav-container label.logo {
+    font-size: 1.5rem;
+    color: black;
+  }
+  header .check-btn {
+    display: block;
+    font-size: 1.4rem;
+  }
+  header ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  header nav ul li {
+    display: block;
+  }
+  header nav ul li a {
+    font-size: 1.5rem;
+  }
+  header #check:checked ~ ul {
+    left: 0;
+    transform: rotate(360deg);
+  }
+  header nav ul {
+    float: left;
+    margin-left: 0px;
+  }
 }
 header .Main-section {
   color: #ffffff;
@@ -120,7 +206,7 @@ header .Main-section {
 }
 header .Main-section h1 {
   padding-top: 10rem;
-  font-size: 5.5rem;
+  font-size: 5rem;
   letter-spacing: 0px;
   font-weight: bolder;
 }
@@ -155,9 +241,6 @@ header .main-btn button:hover {
   color: #ffc107;
 }
 
-.section-1 {
-  background-color: #ffffff;
-}
 .section-1 .part-1 {
   padding-top: 2.5rem;
 }
@@ -400,6 +483,7 @@ header .main-btn button:hover {
 }
 .blog-news .card {
   margin: 3rem;
+  transition: 3s ease;
   border: none;
 }
 .blog-news .card img {
@@ -407,7 +491,7 @@ header .main-btn button:hover {
   border: none;
 }
 .blog-news .card:hover {
-  transform: scale(1.1);
+  transform: rotate(360deg);
   opacity: 0.8;
 }
 .blog-news .card:hover h1 {
@@ -673,4 +757,10 @@ footer .foot-3 a .btn-pic {
 
 .footer .last-foot .last-btns a:hover {
   color: #ffc107;
+}
+
+@media (max-width: 650px) {
+  .Main-section h1 {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
