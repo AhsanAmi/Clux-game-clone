@@ -47,7 +47,7 @@ Please make sure to follow our coding standards and best practices
 <h2>🧑🏻 Ahsan Amin </h2>
             <h4>You can get in touch with me on my LinkedIn Profile:</h4>
             <li >
-				<label>Linked In:<label><a href="https://www.linkedin.com/in/ahsan-amin-/">@linkedin</a>
+				<label>Linked In:<label><a href="https://www.linkedin.com/in/ahsanami-/">@linkedin</a>
 			</li>
             <h4>You can also follow my GitHub Profile to stay updated about my latest projects</h4>
 			<li >
